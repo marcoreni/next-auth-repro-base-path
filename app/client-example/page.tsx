@@ -15,7 +15,7 @@ export default async function ClientPage() {
   }
 
   return (
-    <SessionProvider session={session}>
+    <SessionProvider basePath="/foo/api/auth" session={session}>
       <ClientExample />
     </SessionProvider>
   )
